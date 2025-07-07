@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Database Test</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="" name="keywords"/>
+<meta content="" name="description"/>
+<!-- Favicons -->
+<link href="img/favicon.ico" rel="icon"/>
+<link href="img/apple-touch-icon.png' %}" rel="apple-touch-icon"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Nunito:600,700,800,900" rel="stylesheet"/>
+<!-- Bootstrap CSS File -->
+<link href="vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet"/>
+<!-- Libraries CSS Files -->
+<link href="vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet"/>
+<link href="vendor/animate/animate.min.css' %}" rel="stylesheet"/>
+<link href="vendor/ionicons/css/ionicons.min.css' %}" rel="stylesheet"/>
+<link href="vendor/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet"/>
+<link href="vendor/tempusdominus/css/tempusdominus-bootstrap-4.min.css' %}" rel="stylesheet"/>
+<!-- Main Stylesheet File -->
+<link href="{% static 'css/hover-style.css' %}" rel="stylesheet">
+<link href="{% static 'css/style.css' %}" rel="stylesheet"/>
+</link><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&amp;display=swap" rel="stylesheet"/><style>* { font-family: 'Montserrat', sans-serif !important; }</style><style>* { font-family: 'Montserrat', sans-serif !important; }</style></head>
+<body>
+<!-- Top Header Start -->
+<section class="banner-header">
+<div class="container text-center">
+<div class="row">
+<div class="col-md-12">
+<h1><a href="updated_index.html">Enterprise Database Governance</a></h1>
+<!-- <a class="brand" href="index.html" title="Home"><img alt="Logo" src="{% static 'img/logo.png' %}"></a> -->
+</div>
+</div>
+<div class="col-md-12">
+<h2>Yours Testing Guide</h2>
+</div>
+</div>
+</section>
+<!-- Top Header End -->
+<!-- Header Start -->
+<header id="header">
+<div class="container">
+<nav id="nav-menu-container">
+<ul class="nav-menu">
+<li><a href="updated_index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="updated_service.html">Database Test</a></li>
+<li class="menu-active"><a href="booking.html">TestDB</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<!-- Header End -->
+<main id="main">
+<!-- Booking Section Start -->
+
+<section id="booking">
+  <div class="container">
+    <div class="section-header">
+      <h3 id="selected-db-name">Selected Database</h3><h2>Database Connectivity Test</h2>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="booking-form">
+          <form id="connectForm" onsubmit="return false;">
+            <div class="form-row">
+              <div class="control-group col-sm-6">
+                <label>Hostname</label>
+                <input type="text" id="hostname" class="form-control" placeholder="e.g. 127.0.0.1" value="localhost"/>
+              </div>
+              <div class="control-group col-sm-6">
+                <label>Database Name</label>
+                <input type="text" id="dbname" class="form-control" placeholder="e.g. testdb" value="TestDB"/>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="control-group col-sm-6">
+                <label>Username</label>
+                <input type="text" id="username" class="form-control" placeholder="e.g. srctopology" value="srctopology"/>
+              </div>
+              <div class="control-group col-sm-6">
+                <label>Password</label>
+                <input type="password" id="password" class="form-control" placeholder="Fetched from password file" value="default_password"/>
+              </div>
+            </div>
+            <div class="text-center mt-4">
+                <!--
+              <button onclick="testConnection()" class="btn btn-primary">Connect</button>     -->
+              
+                <button type="button" onclick="testConnection()">Connect</button>
+
+            </div>
+           <div id="loading" style="display: none; text-align: center; margin-top: 20px;">
+  <img src="{% static 'img/preloaded.gif" alt="Loading..." width="60"/>
+  <p style="color: #888;">Connecting to database...</p>
+</div>
+
+            <div class="mt-4" id="resultBox" style="display: none;">
+              <h5>Connection Result:</h5>
+              <pre id="resultOutput" style="background:#f4f4f4; padding: 15px; border-radius: 5px;"></pre>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Booking Section End -->
+<!-- Subscriber Section Start -->
+
+<!-- Subscriber Section end -->
+<!-- Support Section Start -->
+
+<!-- Support Section end -->
+</main>
+<!-- Footer Start -->
+<footer id="footer">
+<div class="container">
+<div class="copyright">
+<p>© Enterprise Database Governance. All Rights Reserved</p>
+<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+</div>
+</div>
+</footer>
+<!-- Footer end -->
+<a class="back-to-top" href="#"><i class="fa fa-chevron-up"></i></a>
+<!-- Uncomment below i you want to use a preloader -->
+<!-- <div id="preloader"></div> -->
+<!-- JavaScript Libraries -->
+<script src="vendor/jquery/jquery.min.js' %}"></script>
+<script src="vendor/jquery/jquery-migrate.min.js' %}"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="vendor/easing/easing.min.js' %}"></script>
+<script src="vendor/stickyjs/sticky.js' %}"></script>
+<script src="vendor/superfish/hoverIntent.js' %}"></script>
+<script src="vendor/superfish/superfish.min.js' %}"></script>
+<script src="vendor/owlcarousel/owl.carousel.min.js' %}"></script>
+<script src="vendor/touchSwipe/jquery.touchSwipe.min.js' %}"></script>
+<script src="vendor/tempusdominus/js/moment.min.js' %}"></script>
+<script src="vendor/tempusdominus/js/moment-timezone.min.js' %}"></script>
+<script src="vendor/tempusdominus/js/tempusdominus-bootstrap-4.min.js' %}"></script>
+<!-- Main Javascript File -->
+ <script src="{% static 'js/main.js' %}"></script> 
+ <script>
+  // Extract "db" value from query string
+  const params = new URLSearchParams(window.location.search);
+  const dbName = params.get("db");
+
+  // Set it as heading if available
+  if (dbName) {
+    const dynamicHeading = document.getElementById("selected-db-name");
+    if (dynamicHeading) {
+      dynamicHeading.textContent = dbName;
+    }
+  }
+</script>
+
+<!--
+<script>
+  function testConnection() {
+    const host = document.getElementById("hostname").value || "localhost";
+    const db = document.getElementById("dbname").value || "TestDB";
+    const user = document.getElementById("username").value || "srctopology";
+    const pass = document.getElementById("password").value || "default_password";
+
+    document.getElementById("loading").style.display = "block";
+    document.getElementById("resultBox").style.display = "none";
+
+    setTimeout(() => {
+      document.getElementById("loading").style.display = "none";
+      document.getElementById("resultBox").style.display = "block";
+
+      document.getElementById("resultOutput").innerText =
+        `Connection to database successful!\n\nHost: ${host}\nDatabase: ${db}\nUsername: ${user}\nStatus: ✅ Connected`;
+    }, 2000);
+  }
+</script>
+-->
+
+</body>
+</html>
